@@ -109,7 +109,7 @@ ___
 
     6. Run the script
 
-        From the project root: python src/process_users.py
+        From the project root: python src/process_users.py<br>
         To run through the streamlit application : streamlit run python src/app.py
 
     7. Results
