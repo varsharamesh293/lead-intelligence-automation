@@ -3,39 +3,39 @@
 1. **Business Summary**
 
     This project automates the classification and analysis of incoming leads and their user comments through the "Contact Us" of the website using Google Gemini AI.<br>
-    Manually reviewing leads to understand who the user is, how urgent the request is, and what action is needed is time-consuming and inconsistent.
-    This automation solves that problem by:
-        - Automatically identifying whether the lead is a Decision Maker, Practitioner, or Other.
-        - Assessing the urgency of each comment as High, Medium, or Low.
-        - Generating a concise summary of what the lead wants.
-        - Assigning the lead to the correct internal team.
-    Business Value:
-        - Saves manual triage time (can save several hours per week depending on lead volume)
-        - Improves lead routing accuracy and follow-up prioritization
-        - Ensures consistent classification across all leads
-        - Creates structured output (CSV + JSON) ready for CRM ingestion
-        - Non-technical teams can monitor results through an interactive Streamlit dashboard
+    Manually reviewing leads to understand who the user is, how urgent the request is, and what action is needed is time-consuming and inconsistent.<br>
+    This automation solves that problem by:<br>
+        - Automatically identifying whether the lead is a Decision Maker, Practitioner, or Other.<br>
+        - Assessing the urgency of each comment as High, Medium, or Low.<br>
+        - Generating a concise summary of what the lead wants.<br>
+        - Assigning the lead to the correct internal team.<br>
+    Business Value:<br>
+        - Saves manual triage time (can save several hours per week depending on lead volume)<br>
+        - Improves lead routing accuracy and follow-up prioritization<br>
+        - Ensures consistent classification across all leads<br>
+        - Creates structured output (CSV + JSON) ready for CRM ingestion<br>
+        - Non-technical teams can monitor results through an interactive Streamlit dashboard<br>
 
 
 
 2. **How It Works** (High-Level Overview)
 
-    The script reads a raw CSV file containing email, job title, and comment.
-    The CSV is cleaned and standardized.
-    For each row:
-    A prompt is created based on the job title and comment.
-    The Gemini model analyzes:
-        - The persona type
-        - The urgency
-        - The summary
-    Output is appended to the dataset.
-    Leads are automatically mapped to an internal team based on persona + urgency.
-    Final results are exported as both CSV and JSON.
+    The script reads a raw CSV file containing email, job title, and comment.<br>
+    The CSV is cleaned and standardized.<br>
+    For each row:<br>
+    A prompt is created based on the job title and comment.<br>
+    The Gemini model analyzes:<br>
+        - The persona type<br>
+        - The urgency<br>
+        - The summary<br>
+    Output is appended to the dataset.<br>
+    Leads are automatically mapped to an internal team based on persona + urgency.<br>
+    Final results are exported as both CSV and JSON.<br>
 
 3. **Technical Deep Dive**
 
-Architecture
-The project follows a modular structure:
+Architecture<br>
+The project follows a modular structure:<br>
 
     project/
     │
@@ -56,7 +56,7 @@ The project follows a modular structure:
         ├── cleaned/              # Reformatted data
         └── output/               # Final CSV + JSON
 
-Prompt Engineering Approach
+Prompt Engineering Approach<br>
 
     The prompt is designed to enforce structure and ensure Gemini returns machine-parsable JSON. Key choices:
 
@@ -67,11 +67,11 @@ Prompt Engineering Approach
         - The script automatically removes Markdown (e.g., ```json blocks) before parsing.
         - This ensures high accuracy and consistent formatting.
 
-API Usage
+API Usage<br>
 
-    Uses generate_content() from the Gemini 2.0 Flash model.
-    Extracts text via response.candidates[0].content.parts[0].text.
-    Includes retry logic for malformed JSON or temporary API failures.
+    Uses generate_content() from the Gemini 2.0 Flash model.<br>
+    Extracts text via response.candidates[0].content.parts[0].text.<br>
+    Includes retry logic for malformed JSON or temporary API failures.<br>
 
 4. **Setup & Run Instructions (Backend)**
 
