@@ -2,7 +2,7 @@
 
 1. **Business Summary**
 
-    This project automates the classification and analysis of incoming leads and their user comments through the "Contact Us" of the website using Google Gemini AI.
+    This project automates the classification and analysis of incoming leads and their user comments through the "Contact Us" of the website using Google Gemini AI.<br>
     Manually reviewing leads to understand who the user is, how urgent the request is, and what action is needed is time-consuming and inconsistent.
     This automation solves that problem by:
         - Automatically identifying whether the lead is a Decision Maker, Practitioner, or Other.
