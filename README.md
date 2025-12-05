@@ -16,7 +16,7 @@
         - Creates structured output (CSV + JSON) ready for CRM ingestion<br>
         - Non-technical teams can monitor results through an interactive Streamlit dashboard<br>
 
-
+___
 
 2. **How It Works** (High-Level Overview)
 
@@ -31,6 +31,8 @@
     Output is appended to the dataset.<br>
     Leads are automatically mapped to an internal team based on persona + urgency.<br>
     Final results are exported as both CSV and JSON.<br>
+
+___
 
 3. **Technical Deep Dive**
 
@@ -73,6 +75,8 @@ API Usage<br>
     Extracts text via response.candidates[0].content.parts[0].text.<br>
     Includes retry logic for malformed JSON or temporary API failures.<br>
 
+___
+
 4. **Setup & Run Instructions (Backend)**
 
     1. Install Python (recommended 3.10 or above)
@@ -113,6 +117,8 @@ API Usage<br>
         Processed output will appear in:
             data/output/classified_output.csv
             data/output/classified_output.json
+
+___
 
 5. **Future Improvements**
 
