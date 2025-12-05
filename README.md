@@ -76,21 +76,21 @@ API Usage<br>
 4. **Setup & Run Instructions (Backend)**
 
     1. Install Python (recommended 3.10 or above)
-    Because some Google packages are not fully compatible with Python 3.9.
+        Because some Google packages are not fully compatible with Python 3.9.
 
     2. Create a virtual environment
-    python -m venv .venv
+        python -m venv .venv
 
     Activate it:
     Windows
     .\.venv\Scripts\activate
 
     3. Install dependencies
-    pip install -r requirements.txt
+        pip install -r requirements.txt
 
     4. Add your environment variables
 
-    Create a .env file in the project root:
+        Create a .env file in the project root:
 
         API_KEY=your_google_api_key
         MODEL_NAME=your_google_model_name
@@ -101,18 +101,18 @@ API Usage<br>
 
     5. Place your CSV file
 
-    Put your raw CSV under: data/raw/
+        Put your raw CSV under: data/raw/
 
     6. Run the script
 
-    From the project root: python src/process_users.py
-    To run through the streamlit application : streamlit run python src/app.py
+        From the project root: python src/process_users.py
+        To run through the streamlit application : streamlit run python src/app.py
 
     7. Results
 
-    Processed output will appear in:
-        data/output/classified_output.csv
-        data/output/classified_output.json
+        Processed output will appear in:
+            data/output/classified_output.csv
+            data/output/classified_output.json
 
 5. **Future Improvements**
 
