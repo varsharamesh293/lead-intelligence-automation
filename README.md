@@ -5,7 +5,7 @@
     This project automates the classification and analysis of incoming leads and their user comments through the "Contact Us" of the website using Google Gemini AI.<br>
     Manually reviewing leads to understand who the user is, how urgent the request is, and what action is needed is time-consuming and inconsistent.<br>
     This automation solves that problem by:<br>
-        <t>- Automatically identifying whether the lead is a Decision Maker, Practitioner, or Other.<br>
+       - Automatically identifying whether the lead is a Decision Maker, Practitioner, or Other.<br>
         - Assessing the urgency of each comment as High, Medium, or Low.<br>
         - Generating a concise summary of what the lead wants.<br>
         - Assigning the lead to the correct internal team.<br>
