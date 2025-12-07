@@ -96,12 +96,12 @@ ___
 
         Create a .env file in the project root:
 
-        API_KEY=your_google_api_key
-        MODEL_NAME=your_google_model_name
-        INPUT_CSV=data/raw/leads.csv
-        CLEANED_CSV=data/cleaned/cleaned_leads.csv
-        OUTPUT_CSV=data/output/classified_output.csv
-        OUTPUT_JSON=data/output/classified_output.json
+        API_KEY=your_google_api_key <br>
+        MODEL_NAME=your_google_model_name <br>
+        INPUT_CSV=data/raw/leads.csv <br>
+        CLEANED_CSV=data/cleaned/cleaned_leads.csv <br>
+        OUTPUT_CSV=data/output/classified_output.csv <br>
+        OUTPUT_JSON=data/output/classified_output.json <br>
 
     5. Place your CSV file
 
