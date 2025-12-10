@@ -8,9 +8,7 @@ from data_cleaner import clean_csv
 from gemini_api import configure_gemini, analyze_user_and_comment
 from utils import assign_team
 
-# -----------------------------
 # Load environment variables
-# -----------------------------
 load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
@@ -21,9 +19,8 @@ CLEANED_CSV = os.getenv("CLEANED_CSV")
 OUTPUT_CSV = os.getenv("OUTPUT_CSV")
 OUTPUT_JSON = os.getenv("OUTPUT_JSON")
 
-# -----------------------------
 # Main pipeline
-# -----------------------------
+
 def main():
     df = clean_csv(INPUT_CSV, CLEANED_CSV)
     print("CSV cleaned successfully!")

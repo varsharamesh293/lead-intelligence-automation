@@ -32,32 +32,25 @@ comment:{comment}
  ###Few Shot Examples
  {
     {
-      "role": "Software Engineer",
-      "message": "The server crashed and the client portal is down. We need a fix ASAP.",
-      "Persona": "Practitioner",
-      "Urgency": "High",
-      "Reasoning": "Role is technical and execution-focused; message describes critical system outage."
+    "role": "Software Engineer",
+    "message": "The server crashed and the client portal is down. We need a fix ASAP.",
+    "persona_type": "Practitioner",
+    "urgency": "High",
+    "summary": "Server crash has caused client portal outage requiring immediate fix."
     },
     {
-      "role": "Marketing Director",
-      "message": "I suggest we increase the marketing budget by 20% next quarter to boost lead generation.",
-      "Persona": "Decision Maker",
-      "Urgency": "Medium",
-      "Reasoning": "Role manages strategy and budget; message is important but not immediate."
+    "role": "Marketing Director",
+    "message": "I suggest we increase the marketing budget by 20% next quarter to boost lead generation.",
+    "persona_type": "Decision Maker",
+    "urgency": "Medium",
+    "summary": "Recommending a 20% increase in marketing budget next quarter to boost lead generation."
     },
     {
-      "role": "Intern",
-      "message": "Can someone explain how to use the new reporting dashboard?",
-      "Persona": "Other",
-      "Urgency": "Low",
-      "Reasoning": "Role is a trainee/learner; message is informational with no immediate consequence."
-    },
-    {
-      "role": "Finance Manager",
-      "message": "Please review the quarterly financial report and provide your feedback by next Friday.",
-      "Persona": "Decision Maker",
-      "Urgency": "Medium",
-      "Reasoning": "Role involves oversight and decision authority; deadline is reasonable, not urgent."
+    "role": "Intern",
+    "message": "Can someone explain how to use the new reporting dashboard?",
+    "persona_type": "Other",
+    "urgency": "Low",
+    "summary": "Needs guidance on using the new reporting dashboard."
     }
  }
 ---

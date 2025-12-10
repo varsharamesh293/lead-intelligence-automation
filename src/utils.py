@@ -2,7 +2,7 @@ import re, json
 
 def assign_team(user_type: str, urgency: str) -> str:
     """
-    Assign team based on persona_type and urgency.
+    Assign team based on persona_type and urgency
     
     """
     if urgency.lower() == "high" and user_type.lower() == "decision maker":

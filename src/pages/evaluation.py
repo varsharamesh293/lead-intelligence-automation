@@ -8,7 +8,7 @@ st.title("LeadRouter AI - Model Evaluation")
 
 st.markdown("Upload your **Ground Truth CSV** and **Predicted CSV** for evaluation.")
 
-# ---------------- Helper: Clean CSV ----------------
+
 def clean_csv(file) -> pd.DataFrame:
     with tempfile.NamedTemporaryFile(delete=False, mode="w", encoding="utf-8", suffix=".csv") as tmp:
         temp_path = tmp.name
@@ -55,7 +55,7 @@ if truth_file and pred_file:
             'assigned_team_true', 'assigned_team_pred']:
         df_eval[col] = df_eval[col].astype(str).str.lower().str.strip()
 
-        
+
     # ---------------- Accuracy ----------------
     persona_acc = accuracy_score(df_eval['persona_type_true'], df_eval['persona_type_pred'])
     urgency_acc = accuracy_score(df_eval['urgency_true'], df_eval['urgency_pred'])

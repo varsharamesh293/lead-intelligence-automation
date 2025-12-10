@@ -13,7 +13,7 @@ def clean_csv(input_path: str, output_path: str) -> pd.DataFrame:
     for line in lines:
         line = line.strip()
         if line.startswith('"') and line.endswith('"'):
-            line = line[1:-1]  # remove outer quotes
+            line = line[1:-1]  
         line = line.replace('""', '"')
         cleaned_lines.append(line + "\n")
 
