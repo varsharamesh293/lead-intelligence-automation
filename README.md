@@ -161,7 +161,7 @@ ___
     
         Business Benefits:<br>
     
-        1. No manual uploads or Excel handling
+        1. No manual uploads or Excel handling<br>
             Leads go straight from raw CSV -> AI -> CRM -> ready for sales.<br>
             Faster lead response times<br>
             
